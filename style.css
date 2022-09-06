@@ -1,3 +1,4 @@
+
 body {
     margin: 0;
     padding: 0;
@@ -710,9 +711,20 @@ blockquote p{
 }
 
 .social {
+    position: relative;
     max-width: 400px;
-    margin: auto auto auto auto;
+    margin: 30px auto auto auto;
 }
+
+.social .reseau {
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    color: #372C2C;
+    font-weight: 600;
+    align-items: center;
+    
+} 
 
 .title-h2 {
     font-weight: 600;
