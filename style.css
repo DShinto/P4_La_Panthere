@@ -1,3 +1,6 @@
+html {
+    scroll-behavior: smooth;
+}
 
 body {
     margin: 0;
@@ -1088,4 +1091,30 @@ h4 {
     .bloc-mob-center-text {
         text-align: center;
     }
+}
+
+.scroll_to_top {
+    position: fixed;
+    width: 25px;
+    height: 25px;
+    bottom: 30px;
+    right: 30px;
+    color: #372C2C;
+    opacity: 0.7;
+    text-decoration: none;
+    scroll-behavior: smooth;
+}
+
+.scroll_to_top:hover{
+	opacity: 1;
+    transform: scale(1.1);
+}
+
+.to_top:before{
+	content:'▲';
+	position:absolute;
+	bottom:20px;
+	left:5px;
+	font-size: 20px;
+	color: #372C2C;
 }
