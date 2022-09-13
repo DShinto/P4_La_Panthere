@@ -138,7 +138,7 @@ a:hover {
 .d-bloc h5 a,
 .d-bloc h6 a,
 .d-bloc p a {
-    color: rgba(55, 44, 44, .6);
+    color: rgba(55, 44, 44, 1);
 }
 
 .d-bloc .a-btn:hover,
@@ -681,6 +681,14 @@ a {
     margin: auto auto auto auto;
 }
 
+.panthere {
+    width: 100px;
+}
+
+.logo-p > img {
+    height: 40px;
+}
+
 p {
     font-size: 11px;
 }
@@ -695,15 +703,16 @@ blockquote {
     border: none;
 }
 
-blockquote p{
+.citation p {
     font-size: 18px;
-    color: #000000;
+    color: #372c2c;
     font-weight: 600;
 }
 
-blockquote + figcaption {
-    color: #000000;
+.auteur  {
+    color: #372c2c;
     font-weight: 600;
+    font-size: 14px;
 }
 
 .tight-width-whitespace {
@@ -738,8 +747,11 @@ blockquote + figcaption {
     color: #372C2C;
     font-weight: 600;
     align-items: center;
-    
 } 
+
+.reseau-effect:hover {
+    transform: scale(1.1);
+}
 
 .title-h2 {
     font-weight: 600;
@@ -785,6 +797,8 @@ h4 {
 
 .portfolio-thumb {
     margin-bottom: 24px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .portfolio-row {
@@ -900,13 +914,13 @@ h4 {
     }
 }
 
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
     .b-parallax {
         background-attachment: scroll;
     }
 }
 
-@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 1.5) {
+@media only screen and (min-width: 1024px) and (max-width: 1366px) and (-webkit-min-device-pixel-ratio: 1.5) {
     .b-parallax {
         background-attachment: scroll;
     }
@@ -924,10 +938,12 @@ h4 {
         overflow-x: hidden;
         position: relative;
     }
+    /* 
     .bloc {
         padding-left: constant(safe-area-inset-left);
         padding-right: constant(safe-area-inset-right);
     }
+     */
     .bloc-group,
     .bloc-group .bloc {
         display: block;
@@ -936,8 +952,10 @@ h4 {
     .bloc-fill-screen .fill-bloc-top-edge,
     .bloc-fill-screen .fill-bloc-bottom-edge {
         padding: 0 20px;
+        /*  
         padding-left: constant(safe-area-inset-left);
         padding-right: constant(safe-area-inset-right);
+        */
     }
 }
 
